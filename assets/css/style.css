@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    font-size: 20x;
    
 }
 
@@ -16,6 +17,7 @@ body{
 .interface{
     max-width: 1280px;
     margin: 0 auto;
+    
 }
 
 .flex{
@@ -23,7 +25,7 @@ body{
 }
 
 .btn-contato button{
-    padding: 10px 40px;
+    padding: 35px 65px;
     font-size: 18px;
     font-weight: 600;
     background-color: #00aeff;
@@ -50,24 +52,42 @@ button:hover, form .btn-enviar input:hover{
 
 /* estilo do cabeçalho */
 header{
-    padding: 40px 4%;
+        width: 100%; /* Ocupa toda a largura */
+
+
+   
 }
 
 header > .interface{
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
+    background-color: #003B71;  
+   /* position: fixed;
+    top: 0;
+    /*left: 0; /* Alinha no topo da página */
+    z-index: 1000; /* Z-index alto para garantir que fique sobre o conteúdo */
+    padding: 10px 20px; /* Espaçamento interno opcional */
+    width: 100%; /* Ocupa toda a largura */
+   /* box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2); /* Sombra opcional */
+    }
+    
+
 header a{
     color: #efe8e8;
     text-decoration:royalblue;
     display: inline-block;
-    transition: .2s;
+    font-weight: bold;
+    font-size: 25px;
+    
 }
 
 header nav.menu-desktop a:hover{
     color: #fff;
+    font-weight: bold;
     transform: scale(1.05);
+     width: 100%; /* Ocupa toda a largura */
+   
 }
 
 header nav ul{
@@ -76,13 +96,16 @@ header nav ul{
 
 header nav.menu-desktop ul li{
     display: inline-block;
-    padding: 0 0px;
+    padding: 0 40px;
+    font-size: 25px;
+    
 }
 
 /* ESTILO DO MENU MOBILE*/
 .btn-abrir-menu i{
     color: #00aeff;
     font-size: 25px;
+    margin-bottom: 40px;
 }
 
 .btn-abrir-menu{
@@ -147,7 +170,10 @@ header nav.menu-desktop ul li{
 
 /* estilo do topo do site */
 section.topo-do-site{
-    padding: 40px 4%;
+    padding: 40px 2%;
+    margin-top: 3px;
+    
+    
 }
 
 section.topo-do-site .flex{
@@ -160,6 +186,7 @@ section.topo-do-site .flex{
     color: #00aeff;
     font-size: 42px;
     line-height: 40px;
+
 }
 
 .topo-do-site .txt-topo-site h1 span{
@@ -171,6 +198,8 @@ section.topo-do-site .flex{
     margin: 40px 0px;
     font-size: 22px;
     text-align: justify;
+
+    
 }
 
 .topo-do-site .txt-topo-site p span{
@@ -181,6 +210,7 @@ section.topo-do-site .flex{
 .topo-do-site .img-topo-site img{
     position: relative;
     animation: flutuar 1s ease-in-out infinite alternate;
+    margin-bottom: 300px;
 }
 
 @keyframes flutuar{
@@ -195,6 +225,7 @@ section.topo-do-site .flex{
 /* estilo das especialidades */
 section.especialidades{
     padding: 100px 4%;
+    margin-bottom: 40px;
 }
 section.especialidades .flex{
     gap: 82px;
@@ -224,11 +255,13 @@ section.especialidades .flex{
 
 /* ESTILO DO SOBRE */
 section.sobre{
-    padding: 90PX 4%;
+    padding: 50px 4%;
+    margin-bottom: 40px;
+
 }
 
 section.sobre .flex{
-    align-items: center;
+    align-items: baseline;
     gap: 60px;
 }
 
@@ -250,8 +283,9 @@ section.sobre .flex{
 }
 
 .sobre .txt-sobre p{
-    margin: 20px 0;
+    margin: 40px 0;
     text-align: justify;
+    font-size: 19px;
 }
 
 .btn-social button{
@@ -269,6 +303,7 @@ section.sobre .flex{
 /* ESTILO PORTIFÓLIO */ 
 section.portifolio{
     padding: 40px 4%;
+    margin-bottom: 40px;
     box-shadow: 0 0 40px 10px #ffffff23;
 }
 
@@ -341,7 +376,7 @@ section.portifolio .flex{
     text-decoration: none;
 }
 
-/* .overlay{
+/*.overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -435,8 +470,8 @@ footer .line-footer p a{
 }
 
 .integrantes{
-    margin-top: 100px;
-    width: auto;
+    margin-top: 1px;
+    width: 100px;
     transition: .5s;
 }
 
@@ -449,7 +484,7 @@ footer .line-footer p a{
 
 .img-sobre img:hover{
     transform: scale(1.05);
-    box-shadow:0 0 8px #00aeff;
+    box-shadow:0 px #00aeff;
 }
 
 .img-sobre h3{
@@ -460,14 +495,15 @@ footer .line-footer p a{
 .img-sobre p{
     color: #fff;
     text-align: center;
+    font-size: 15px;
 }
 
 .img-sobre img{
     border-radius: 50%;
     height: 100px;
     width: 100px;
-    margin-top: 20px;
-    margin-left: 9px;
+    margin-top: 00px;
+    margin-left: 0px;
     
     
 }
@@ -529,7 +565,7 @@ footer .line-footer p a{
     .sobre .txt-sobre h2{
         font-size: 34px;
         line-height: 35px;
-        text-align: center;
+        text-align: justify;
     }
 
     .btn-social{
